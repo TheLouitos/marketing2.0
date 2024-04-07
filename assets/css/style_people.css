@@ -1,0 +1,147 @@
+.dropdown {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  border-radius: 20px;
+  margin: 20px auto; /* Centrer le bloc h1 horizontalement */
+  width: fit-content; /* Ajuster la largeur au contenu */
+  padding: auto;
+}
+
+.containersim {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+  width: 80%; /* Ajuster en fonction de la largeur souhaitée */
+  box-sizing: border-box;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+  border-radius: 20px;
+}
+
+h1.sim {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: #333;
+  font-weight: bold;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(50% - 10px); /* Ajustez cette valeur pour créer de l'espace entre les groupes */
+  margin-right: 0px; /* Espace horizontal entre les groupes d'input */
+  margin-bottom: 20px; /* Espace vertical entre les lignes d'input */
+}
+
+/* Si vous voulez également ajouter un espace entre les éléments sur la même ligne */
+.input-row:not(:last-child) {
+  margin-bottom: 0px; /* Espace entre les rangées d'inputs */
+}
+
+label {
+  margin-bottom: 5px; /* Espace entre le label et l'input */
+}
+
+input[type="number"] {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  /* autres styles */
+  margin-bottom: 10px; /* Espace au-dessous de chaque input pour les séparer verticalement */
+  background-color: #f9f9f9;
+  color: #333333;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%; /* L'input prend toute la largeur disponible */
+}
+
+/* Assurez-vous que le dernier input de chaque groupe n'a pas de marge en bas pour maintenir l'espacement uniforme */
+.input-group:last-child input[type="number"] {
+  margin-bottom: 0;
+}
+
+/* Autres styles restent inchangés */
+
+/* Ajouter une marge à droite pour le deuxième input de chaque ligne pour les écrans plus larges */
+@media (min-width: 768px) {
+  .input-group:nth-child(2n) input[type="number"] {
+    margin-right: 20px; /* Espace entre les inputs sur la même ligne */
+  }
+}
+
+/* Button */
+
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  button,
+  .butt {
+    margin-top: 40px;
+    -moz-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    display: inline-block;
+    color: inherit;
+    background: none;
+    text-decoration: none;
+    border: solid 1px #c2c7cc;
+    border-radius: 0.35em;
+    padding: 0.8em 2em 0.8em 2em;
+    cursor: pointer;
+    outline: 0;
+  }
+
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    button:hover,
+    .butt:hover {
+      color: #f35858;
+      border-color: rgba(243, 88, 88, 0.5);
+    }
+
+.resultats {
+  font-family: 'Montserrat', sans-serif; /* ou 'Montserrat', comme dans le reste de votre design */
+  font-size: 16px; /* ajustez la taille de la police à votre préférence */
+  color: #333; /* une couleur de texte standard */
+  margin-bottom: 50px; /* ajoute un peu d'espace sous chaque résultat */
+  padding: 0px 0; /* ajoute un peu d'espace au-dessus et en dessous du texte du résultat */
+  border-bottom: 1px solid #ccc; /* une ligne sous le résultat pour le séparer visuellement */
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#resultat13 {
+  font-weight: bold;
+}
+
+#resultat9 {
+  font-weight: bold;
+}
+
+#resultat10 {
+  font-weight: bold;
+}
+
+a.lonk {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin: auto;
+  width: 80%;
+  font-weight: bold;
+  color: #333;
+}
